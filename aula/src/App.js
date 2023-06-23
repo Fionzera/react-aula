@@ -5,7 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Card />
+        <Card text="Final Fantasy XIV" bgColor={"#aaaa"}/>
+        <Card text="Final Fantasy XVI" bgColor={"#ccc"}/>
       </header>
     </div>
   );
