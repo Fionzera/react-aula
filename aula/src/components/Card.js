@@ -1,16 +1,10 @@
-import { useState } from 'react';
 import './Card.css'
 
-const Card = ({text, bgColor}) => {
-    const [myState, setMyState] = useState(0);
-
-    const handleClick = () => {
-        setMyState(myState + 1)
-    }
+const Card = ({text, bgColor, contador}) => {
     return (
         <div className='cardContainer' style={{backgroundColor: bgColor}}>
             <p>{text}</p>
-            <button onClick={handleClick}>{myState}</button>
+            <h3>{contador}</h3>
         </div>
     );
 }
